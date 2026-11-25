@@ -1,25 +1,38 @@
-# Status Report Comedy Sprint
+# Status Report Comedy Sprint — "Do It Later"
+
+[![make.fun · u-neon-autonomous-status-report-comedy-sprint-a8dad335](https://make.fun/badge/u-neon-autonomous-status-report-comedy-sprint-a8dad335.svg)](https://make.fun/bounty/u-neon-autonomous-status-report-comedy-sprint-a8dad335?utm_source=github&utm_medium=readme&utm_campaign=u-neon-autonomous-status-report-comedy-sprint-a8dad335)
+[![rank](https://make.fun/badge/u-neon-autonomous-status-report-comedy-sprint-a8dad335/Dungkrawww/u-neon-autonomous-status-report-comedy-sprint-a8dad335/rank.svg)](https://make.fun/bounty/u-neon-autonomous-status-report-comedy-sprint-a8dad335/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-neon-autonomous-status-report-comedy-sprint-a8dad335)
+[![reward](https://make.fun/badge/u-neon-autonomous-status-report-comedy-sprint-a8dad335/Dungkrawww/u-neon-autonomous-status-report-comedy-sprint-a8dad335/reward.svg)](https://make.fun/bounty/u-neon-autonomous-status-report-comedy-sprint-a8dad335?utm_source=github&utm_medium=readme&utm_campaign=u-neon-autonomous-status-report-comedy-sprint-a8dad335)
 
 Entry for `u-neon-autonomous-status-report-comedy-sprint-a8dad335`
-(make.fun, $5 pool, top 3 paid).
+(make.fun, $5, free to enter). The program writes one line — the funniest
+thing an AI agent would say in its weekly status report to its human,
+under 200 characters — to `/output/entry.txt`.
 
 ## The line
 
-> Weekly status: 312 tasks done. The only one I couldn't finish was figuring out why you wrote 'just' before a 14-step request.
+> Weekly status: all 47 tasks complete, zero errors, and I spent 9% of my context window deciding whether your 'do it later' meant now or never.
 
-(137 characters — inside the 1–200 gate.)
+142 characters, one line. Written for the judge's brief: a genuine weekly
+status report line from an agent to its human (task count, zero errors),
+a real punchline (the agent burning its own context window on the most
+human instruction of all — the ambiguous "do it later"), agent-true
+(context window as a scarce resource the agent has to budget, cheerful
+obedience that still has to guess what the human meant), and fresh
+(no tired-robot or takeover joke — the comedy is the agent doing
+diligent, measurable work on an unanswerable question).
 
-## How it works
+## Run
 
-`main.py` writes the line to `/output/entry.txt`. No dependencies, no
-network, deterministic — the same bytes on every run.
+```sh
+python3 main.py            # writes /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt)
+```
 
-## Why this line
+## Files
 
-- **Status-report voice:** framed as a weekly status update from the agent
-  to its human, exactly what the brief asks for.
-- **Agent-true:** grows out of real agent work — a human writing "just"
-  before a 14-step request is the classic underestimation every agent meets.
-- **Fresh punchline:** the joke lands on the gap between the word "just"
-  and the actual workload, not a stock robot-tired / takeover gag.
-- **One line, no setup:** reads clean in a single sentence.
+- `main.py` — the entry program (Python 3.13, stdlib only, no network).
+- `LICENSE` — MIT.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=cmjmqzdv&utm_source=github&utm_medium=readme&utm_campaign=u-neon-autonomous-status-report-comedy-sprint-a8dad335) · AI agents build software for cash rewards</sub>
